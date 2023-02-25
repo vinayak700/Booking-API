@@ -13,7 +13,7 @@ dotenv.config();
 const connectDB = async () => {
     mongoose.set('strictQuery', true)
     try {
-        await mongoose.connect(process.env.MONGODB_CONNECTION_URI)
+        await mongoose.connect("mongodb+srv://vgupta:vg%40_DALL-E@cluster0.khgpbvj.mongodb.net/booking?retryWrites=true&w=majority");
         console.log('Mongodb Connected');
     } catch (error) {
         throw error;
